@@ -1,0 +1,79 @@
+
+ .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.icon-tooltip {
+  position: relative;
+  color: #ccc;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  color:#ccc;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  border-radius: 6px;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-100%);
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+  font-size:  13px;
+}
+
+.icon-tooltip:hover .tooltip-text {
+  align-items: center;
+  transform: scale(1);
+  visibility: visible;
+  opacity: 3;
+}
+.tooltip-text:hover{
+  margin-right: 50px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+span{
+  align-items: center;
+}
+
+span:hover{
+  box-shadow: 0 0 20px rgba(128, 0, 255, 0.6), 0 0 30px rgba(128, 0, 255, 0.4);
+  transform: translateY(5px);
+}
+
+span:focus {
+  outline: 2px solid rgba(50, 0, 99, 0.6);
+}
+span.icons{
+  text-size-adjust:  10% bold;
+}
+.nav-icon {
+  
+  width: 24px;     
+  height: 24px;
+  object-fit: contain;
+  filter: invert(79%);
+ 
+}

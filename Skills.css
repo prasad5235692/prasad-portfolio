@@ -1,0 +1,59 @@
+.skills-modern-new {
+  padding: 4rem 2rem;
+  background: radial-gradient(c #343539);
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 70px;
+
+  letter-spacing: 1px;
+}
+
+.skills-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-tile {
+  background:  #343539;
+  border-radius: 16px;
+  padding: 1rem 0.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid #9333ea;
+  box-shadow: 0 0 15px rgba(147, 51, 234, 0.15);
+  backdrop-filter: blur(5px);
+  position: relative;
+}
+
+.skill-tile:hover {
+  transform: scale(1);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  animation: float 2s infinite ease-in-out;
+}
+
+.skill-tile h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.skill-tile p {
+  font-size: 0.92rem;
+  color: #ccc;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}

@@ -1,0 +1,49 @@
+
+.hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.spline-canvas {
+  align-items: right;
+}
+.hero-overlay {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  z-index: 2;
+  color: #ccc;
+
+  max-width: 80%;
+}
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+.tag-box
+ {
+  margin: 20px;
+  position: relative;
+  width: 18rem;
+  height: 2.5rem;
+  border-radius: 15px;
+  background: linear-gradient(to right, #656565, #7f42a7, #6600c5, #5300a0, #757575,  #656565);
+  background-size: 200%;
+  animation: animationGradient 2.5s linear infinite;
+  box-shadow: 0 0 15px rgba(255,255,255,0.336);
+}
+@keyframes animationGradient
+{
+  to{
+    background-position: 200%;
+  }
+}
+
+.tag-box.tag{
+  inset: 3px 3px 3px 3px;
+  background-color: black;
+  border-radius: 15px;
+  transform: 0.5s ease;
+}
+
